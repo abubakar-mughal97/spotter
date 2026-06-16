@@ -4,8 +4,8 @@ def display_login() -> bool:
     if st.session_state.get("username") is not None:
         return True
 
-    st.title("AI GYM COACH")
-    st.markdown("Welcome to your personal AI Coach. Please enter a username to start")
+    st.title("Spotter - Your Personal AI Coach")
+    st.markdown("Welcome to Spotter. Your personal AI Coach. Please enter a username to start")
 
     with st.form("login_form", clear_on_submit=False):
         username = st.text_input("Name", placeholder="Enter a name")

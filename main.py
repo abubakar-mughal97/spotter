@@ -7,7 +7,7 @@ from services.config.workout_config import EXERCISE_OPTIONS
 def main():
     st.set_page_config(
         page_icon="🏋️",
-        page_title="AI GYM COACH",
+        page_title="Spotter",
         initial_sidebar_state="expanded",
         layout="centered",
     )
@@ -19,7 +19,7 @@ def main():
     workout_started = st.session_state.get("workout_started")
 
     with st.sidebar:
-        st.title("AI GYM COACH")
+        st.title("Spotter - Your Personal AI Coach")
 
         if st.session_state.get("username"):
             st.caption(f"Welcome, **{st.session_state['username']}**!")
