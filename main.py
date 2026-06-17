@@ -2,6 +2,7 @@ import streamlit as st
 from services.auth.login import display_login
 from services.state.session_defaults import initital_session_defaults
 from services.config.workout_config import EXERCISE_OPTIONS
+from services.persistence.exercise_repository import init_db
 
 
 def main():
@@ -11,6 +12,8 @@ def main():
         initial_sidebar_state="expanded",
         layout="centered",
     )
+
+    init_db()
 
     if not display_login():
         return
