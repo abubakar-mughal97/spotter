@@ -19,7 +19,7 @@ def main():
     workout_started = st.session_state.get("workout_started")
 
     with st.sidebar:
-        st.title("Spotter - Your Personal AI Coach")
+        st.title("🏋️ Spotter - Your Personal AI Coach")
 
         if st.session_state.get("username"):
             st.caption(f"Welcome, **{st.session_state['username']}**!")
