@@ -18,6 +18,14 @@ build/
 
 # Data / Database
 data/
+*.db
+
+# ML Models (large binary files)
+models/*.task
+models/*.tflite
+models/*.onnx
+models/*.pt
+models/*.pth
 
 # OS
 .DS_Store
